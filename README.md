@@ -1,80 +1,89 @@
 # <!-- Публикация: факт 11:34 -->
 irina_aronova_crystal_power_lux_sales
 Site-одностраничник для оплаты 2-х уровней входа в моё сообщество люкс миллениум лидер- независимое от старого матрикса.
-<!DOCTYPE html>
-<html lang="ru">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>💎 CRYSTAL POWER UNIVERSE 💎</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Irina Aronova - Crystal Power Lux Sales</title>
   <style>
-    body { font-family: Arial, sans-serif; background-color: #f8f9fa; padding: 20px; }
-    h1, h2 { color: #5a189a; }
-    .product { background: white; border-radius: 10px; padding: 20px; margin: 20px 0; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    .price { font-weight: bold; margin: 10px 0; }
-    .wallets { font-family: monospace; background: #e0e0e0; padding: 10px; border-radius: 5px; }
+    body { font-family: 'Segoe UI', sans-serif; background: #fff; color: #111; margin: 0; padding: 0; }
+    header, section { padding: 40px 20px; max-width: 900px; margin: auto; }
+    h1, h2 { color: #444; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { padding: 10px; border: 1px solid #ccc; text-align: center; }
+    .note { margin-top: 10px; font-size: 14px; color: #666; }
+    .form { background: #f4f4f4; padding: 20px; border-radius: 12px; margin-top: 40px; }
+    .form input, .form textarea, .form select {
+      width: 100%; padding: 10px; margin-bottom: 10px;
+      border-radius: 8px; border: 1px solid #ccc;
+    }
+    .form button { padding: 12px 20px; border: none; border-radius: 8px; background: #111; color: white; cursor: pointer; }
+    footer { text-align: center; padding: 20px; font-size: 14px; color: #aaa; }
   </style>
 </head>
 <body>
-
-<h1>💎 Добро пожаловать в CRYSTAL POWER UNIVERSE 💎</h1>
-<p>Выберите продукт и используйте подходящий способ оплаты:</p>
-
-<!-- Онлайн-курсы -->
-<div class="product">
-  <h2>1. Онлайн-курсы и коучинг</h2>
-  <div class="price">Предприниматель: $9,999 | 9,999 USDT | 0.1538 BTC</div>
-  <div class="price">Тим Лидер: $24,999 | 24,999 USDT | 0.3846 BTC</div>
-  <div class="price">Люкс Клиент: $59,999 | 59,999 USDT | 0.9231 BTC</div>
-</div>
-
-<!-- Клубные карты -->
-<div class="product">
-  <h2>2. Клубные карты</h2>
-  <div class="price">User (10 лет): $90,000 | 90,000 USDT | 1.3846 BTC</div>
-  <div class="price">Partner: $159,000 | 159,000 USDT | 2.4462 BTC</div>
-  <div class="price">Инвестор: $366,000 | 366,000 USDT | 5.6308 BTC</div>
-</div>
-
-<!-- NFT Арт -->
-<div class="product">
-  <h2>3. NFT Арт-Коллекции</h2>
-  <div class="price">Формат A4: $69,000 | 69,000 USDT | 1.0615 BTC</div>
-  <div class="price">Формат A3: $135,000 | 135,000 USDT | 2.0769 BTC</div>
-  <div class="price">Формат A1: $296,000 | 296,000 USDT | 4.5538 BTC</div>
-</div>
-
-<!-- Презентация проекта -->
-<div class="product">
-  <h2>4. Презентация проекта</h2>
-  <div class="price">Участие: $1,500 | 1,500 USDT | 0.0231 BTC</div>
-</div>
-
-<!-- Кошельки для оплаты -->
-<h2>💰 Реквизиты для оплаты:</h2>
-<div class="wallets">
-  USDT (TRC20): TUpykxPGaWffScBmyfSxRYXQSzUpmMf9HJ<br>
-  USDT (ERC20): 0x5Ca8267e12336E10E1f0d9087A583B71Ef443fc5<br>
-  MetaMask USDT (ERC20): 0xF2F82A77fd748835CA05B42c2d004b4614c61C15<br>
-  BTC: 3HMhFr6BzynS2HfQ6Jk25mzeJoZMcnkCbd
-</div>
-
-<!-- Банковские реквизиты -->
-<h2>🏦 Банковские реквизиты:</h2>
-<div class="wallets">
-  <strong>BNP Paribas (Poland)</strong><br>
-  Name: IRYNA ARONOVA<br>
-  SWIFT: PPABPLPKXXX<br>
-  € IBAN: 90160014621714821270000001<br>
-  $ IBAN: 63160014621714821270000002<br>
-
-  <br><strong>Revolut LTD (Germany)</strong><br>
-  Name: BD Baugesellschaft mbH<br>
-  SWIFT: REVOLT21<br>
-  IBAN: LT89 3250 0431 8651 7335
-</div>
-
-<p><strong>⚠️ После перевода отправьте скриншот оплаты на email или в мессенджер.</strong></p>
-
+  <header>
+    <h1>Crystal Power Lux Sales</h1>
+    <p>Официальная страница онлайн-коучинга, NFT и премиум-продаж от Irina Aronova</p>
+  </header>  <section>
+    <h2>🧠 Онлайн-Коучинг и Школа</h2>
+    <table>
+      <tr><th>Пакет</th><th>Цена (USD)</th><th>USDT (TRC20/ERC20)</th><th>BTC</th></tr>
+      <tr><td>Предприниматель</td><td>$9,999</td><td>9,999 USDT</td><td>0.1538 BTC</td></tr>
+      <tr><td>Тим Лидер / Партнёр</td><td>$24,999</td><td>24,999 USDT</td><td>0.3846 BTC</td></tr>
+      <tr><td>Люкс клиент / Ментор</td><td>$59,999</td><td>59,999 USDT</td><td>0.9231 BTC</td></tr>
+    </table>
+  </section>  <section>
+    <h2>📋 Lux Club Cards</h2>
+    <table>
+      <tr><th>Уровень</th><th>Цена (USD)</th><th>USDT</th><th>BTC</th></tr>
+      <tr><td>User (10 лет, пассив 40%)</td><td>$90,000</td><td>90,000 USDT</td><td>1.3846 BTC</td></tr>
+      <tr><td>Partner (доход от соц. групп)</td><td>$159,000</td><td>159,000 USDT</td><td>2.4462 BTC</td></tr>
+      <tr><td>Инвестор / Донор</td><td>$366,000</td><td>366,000 USDT</td><td>5.6308 BTC</td></tr>
+    </table>
+  </section>  <section>
+    <h2>🎨 NFT Арт-Коллекции</h2>
+    <table>
+      <tr><th>Формат</th><th>Цена (USD)</th><th>USDT</th><th>BTC</th></tr>
+      <tr><td>A4</td><td>$69,000</td><td>69,000 USDT</td><td>1.0615 BTC</td></tr>
+      <tr><td>A3</td><td>$135,000</td><td>135,000 USDT</td><td>2.0769 BTC</td></tr>
+      <tr><td>A1</td><td>$296,000</td><td>296,000 USDT</td><td>4.5538 BTC</td></tr>
+    </table>
+  </section>  <section>
+    <h2>📢 Презентация проекта</h2>
+    <table>
+      <tr><th>Формат</th><th>Цена (USD)</th><th>USDT</th><th>BTC</th></tr>
+      <tr><td>1000 гостей онлайн/оффлайн</td><td>$1,500</td><td>1,500 USDT</td><td>0.0231 BTC</td></tr>
+    </table>
+  </section>  <section>
+    <h2>🏡 Виллы (NFT + Удалённый сервис)</h2>
+    <p><strong>Цена:</strong> от $1,500,000 до $8,000,000</p>
+    <p><strong>Предоплата:</strong> от $300,000</p>
+    <p>
+      <strong>В криптовалюте:</strong><br/>
+      ≈ 88 ETH – 470 ETH<br/>
+      ≈ 4.5 BTC – 24 BTC<br/>
+      ≈ 300,000 USDT – 1,600,000 USDT
+    </p>
+    <p class="note">*Фактическая сумма зависит от курса на момент оплаты.</p>
+  </section>  <section>
+    <h2>✉️ Связаться с нами</h2>
+    <div class="form">
+      <form action="https://formspree.io/f/YOUR_ID_HERE" method="POST">
+        <input type="text" name="name" placeholder="Имя и Фамилия" required />
+        <input type="text" name="country" placeholder="Страна проживания" required />
+        <input type="tel" name="phone" placeholder="Телефон с кодом страны" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" rows="5" placeholder="Комментарий / трейлер / вопрос"></textarea>
+        <button type="submit">Отправить заявку</button>
+      </form>
+    </div>
+    <p class="note">
+      После завершения оплаты отправьте скриншот на email или Telegram.
+    </p>
+  </section>  <footer>
+    &copy; 2025 Irina Aronova. Все права защищены.
+  </footer>
 </body>
 </html>
