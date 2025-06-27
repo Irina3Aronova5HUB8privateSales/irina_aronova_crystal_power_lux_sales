@@ -356,7 +356,22 @@
   <input type="hidden" name="item_name" value="Оплата 65000 евро">
   <input type="submit" value="Оплатить 65000€" style="background-color:#8a2be2; color:white; border:none; padding:15px 30px; font-size:18px; cursor:pointer; border-radius:5px;">
 </form>
+<script>
+  const subscribeForm = document.getElementById('subscribeForm');
+  const subscribeEmail = document.getElementById('subscribeEmail');
+  const subscribeMessage = document.getElementById('subscribeMessage');
 
+  subscribeForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const email = subscribeEmail.value.trim();
+    if (!email) return;
+
+    subscribeMessage.style.display = 'block';
+    subscribeMessage.textContent = 'Спасибо за подписку, ' + email + '!';
+
+    subscribeEmail.value = '';
+  });
+</script>
 </body>
 </html>
 
