@@ -372,6 +372,119 @@
     subscribeEmail.value = '';
   });
 </script>
+  <style>
+  #chatButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #6a0dad; /* фиолетовый */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  #chatWindow {
+    display: none;
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 300px;
+    max-height: 400px;
+    background: white;
+    border: 2px solid #6a0dad;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1001;
+    flex-direction: column;
+  }
+  #chatHeader {
+    background-color: #6a0dad;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-weight: bold;
+  }
+  #chatMessages {
+    padding: 10px;
+    height: 250px;
+    overflow-y: auto;
+    font-size: 14px;
+  }
+  #chatForm {
+    display: flex;
+    border-top: 1px solid #ddd;
+  }
+  #chatInput {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+  }
+  #chatSend {
+    background-color: #6a0dad;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+</style>
+
+<button id="chatButton" aria-label="Открыть чат">💬</button>
+
+<div id="chatWindow" role="region" aria-live="polite" aria-label="Чат поддержки">
+  <div id="chatHeader">Поддержка</div>
+  <div id="chatMessages"></div>
+  <form id="chatForm">
+    <input type="text" id="chatInput" placeholder="Напиши сообщение..." aria-label="Сообщение" autocomplete="off" required />
+    <button type="submit" id="chatSend">Отправить</button>
+  </form>
+</div>
+
+<script>
+  const chatButton = document.getElementById('chatButton');
+  const chatWindow = document.getElementById('chatWindow');
+  const chatMessages = document.getElementById('chatMessages');
+  const chatForm = document.getElementById('chatForm');
+  const chatInput = document.getElementById('chatInput');
+
+  chatButton.addEventListener('click', () => {
+    if (chatWindow.style.display === 'flex') {
+      chatWindow.style.display = 'none';
+    } else {
+      chatWindow.style.display = 'flex';
+      chatInput.focus();
+    }
+  });
+
+  chatForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const message = chatInput.value.trim();
+    if (!message) return;
+    
+    appendMessage('Вы', message);
+    chatInput.value = '';
+    
+    // Заглушка — ответ поддержки через 1 секунду
+    setTimeout(() => {
+      appendMessage('Поддержка', 'Спасибо за сообщение! Скоро свяжемся с вами.');
+    }, 1000);
+  });
+
+  function appendMessage(sender, text) {
+    const msg = document.createElement('div');
+    msg.textContent = `${sender}: ${text}`;
+    msg.style.marginBottom = '8px';
+    msg.style.fontWeight = sender === 'Поддержка' ? 'bold' : 'normal';
+    chatMessages.appendChild(msg);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+  }
+</script>
 </body>
 </html>
 
