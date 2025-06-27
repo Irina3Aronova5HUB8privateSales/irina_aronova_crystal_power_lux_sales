@@ -56,16 +56,21 @@
     <button onclick="switchLang('en')">English</button>
   </div>
 
+  <!-- Форма подписки -->
+  <div id="subscription" style="margin-bottom: 30px; padding: 15px; border: 2px solid #6a0dad; border-radius: 10px; max-width: 400px;">
+    <h2>Подпишитесь на обновления</h2>
+    <form id="subscribeForm">
+      <input type="email" id="subscribeEmail" placeholder="Введите ваш email" required style="padding: 10px; width: 70%; font-size: 16px; border: 1px solid #ccc; border-radius: 5px;" />
+      <button type="submit" style="padding: 10px 15px; background-color: #6a0dad; color: white; border: none; border-radius: 5px; cursor: pointer;">Подписаться</button>
+    </form>
+    <p id="subscribeMessage" style="color: green; margin-top: 10px; display: none;">Спасибо за подписку!</p>
+  </div>
+
   <div id="ru">
     <h1>🧠 Онлайн-коучинг и Школа</h1>
     <table>
       <tr><th>Пакет</th><th>Цена (USD)</th><th>USDT (TRC20/ERC20)</th><th>BTC</th></tr>
       <tr><td>Предприниматель</td><td>$9,999</td><td>9,999 USDT</td><td>0.1538 BTC</td></tr>
-      <tr><td>Тим Лидер / Партнёр</td><td>$24,999</td><td>24,999 USDT</td><td>0.3846 BTC</td></tr>
-      <tr><td>Люкс клиент / Ментор</td><td>$59,999</td><td>59,999 USDT</td><td>0.9231 BTC</td></tr>
-    </table>
-
-    <h1>🧾 Lux Club Cards</h1>
     <table>
       <tr><th>Уровень</th><th>Цена (USD)</th><th>USDT</th><th>BTC</th></tr>
       <tr><td>User (10 лет, пассив 40%)</td><td>$90,000</td><td>90,000 USDT</td><td>1.3846 BTC</td></tr>
