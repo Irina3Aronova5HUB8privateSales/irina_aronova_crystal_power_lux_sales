@@ -47,7 +47,61 @@
     strong {
       color: #b22222;
     }
+    /* Стили для кнопок оплаты */
+    #payment-buttons a {
+      text-decoration: none;
+      display: inline-block;
+      margin-right: 15px;
+      margin-bottom: 15px;
+    }
+    #payment-buttons button {
+      border: none;
+      padding: 14px 30px;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 18px;
+      cursor: pointer;
+      transition: opacity 0.3s ease;
+    }
+    #payment-buttons button:hover {
+      opacity: 0.85;
+    }
+    /* Отдельные стили для каждой кнопки */
+    #payment-apple {
+      background: linear-gradient(45deg, #FFD700, #FFC107);
+      color: black;
+    }
+    #payment-google {
+      background: linear-gradient(45deg, #B0B0B0, #757575);
+      color: white;
+    }
+    #payment-skrill {
+      background-color: #d60000;
+      color: white;
+    }
   </style>
+</head>
+<body>
+
+  <!-- Здесь могут быть другие элементы страницы -->
+
+  <!-- Блок кнопок оплаты -->
+  <div id="payment-buttons">
+    <a href="#" onclick="alert('Apple Pay будет активен после настройки'); return false;">
+      <button id="payment-apple">Оплата через Apple Pay</button>
+    </a>
+
+    <a href="#" onclick="alert('Google Pay будет активен после настройки'); return false;">
+      <button id="payment-google">Оплата через Google Pay</button>
+    </a>
+
+    <a href="#" onclick="alert('Skrill будет активен после верификации аккаунта'); return false;">
+      <button id="payment-skrill">Оплата через Skrill</button>
+    </a>
+  </div>
+
+</body>
+</html>
 </head>
 <body>
 
