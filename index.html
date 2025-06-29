@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+⁷<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
@@ -728,5 +728,28 @@
     chatMessages.scrollTop = chatMessages.scrollHeight;
   }
 </script>
+  <!-- Другие скрипты -->
+
+<script>
+  const btnRu = document.getElementById('btn-ru');
+  const btnEn = document.getElementById('btn-en');
+  const contentRu = document.getElementById('content-ru');
+  const contentEn = document.getElementById('content-en');
+
+  btnRu.addEventListener('click', () => {
+    contentRu.style.display = 'block';
+    contentEn.style.display = 'none';
+  });
+
+  btnEn.addEventListener('click', () => {
+    contentRu.style.display = 'none';
+    contentEn.style.display = 'block';
+  });
+
+  contentRu.style.display = 'block';
+  contentEn.style.display = 'none';
+</script>
+
+</body>
 </body>
 </html>
