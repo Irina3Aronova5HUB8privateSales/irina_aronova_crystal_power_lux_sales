@@ -86,11 +86,49 @@
 </head>
 <body>
 
-  <div class="lang-switcher">
-    <button onclick="switchLang('ru')">Русский</button>
-    <button onclick="switchLang('en')">English</button>
-  </div>
+  <!-- Языковой переключатель -->
+<div class="lang-switcher" style="text-align: right; margin: 20px;">
+  <button id="btn-ru" style="margin-right: 10px;">🇷🇺 Русский</button>
+  <button id="btn-en">🇬🇧 English</button>
+</div>
 
+<!-- Контент на русском -->
+<div id="content-ru">
+  <h1>🔥 Огненная женщина</h1>
+  <p>Уникальное портфолио NFT и элитных арт-объектов от Ирины Ароновой.</p>
+  <p>Все ссылки, формы оплаты, описания NFT и подписки — тут.</p>
+  <!-- Вставь здесь весь остальной русский контент -->
+</div>
+
+<!-- Контент на английском -->
+<div id="content-en" style="display:none;">
+  <h1>🔥 Fire Woman</h1>
+  <p>A unique NFT portfolio and elite digital artwork by Irina Aronova.</p>
+  <p>All links, payment forms, NFT info, and subscriptions are here.</p>
+  <!-- Вставь здесь весь остальной английский контент -->
+</div>
+
+<!-- Скрипт переключения языков -->
+<script>
+  const btnRu = document.getElementById('btn-ru');
+  const btnEn = document.getElementById('btn-en');
+  const contentRu = document.getElementById('content-ru');
+  const contentEn = document.getElementById('content-en');
+
+  btnRu.addEventListener('click', () => {
+    contentRu.style.display = 'block';
+    contentEn.style.display = 'none';
+  });
+
+  btnEn.addEventListener('click', () => {
+    contentRu.style.display = 'none';
+    contentEn.style.display = 'block';
+  });
+
+  // Устанавливаем язык по умолчанию — русский
+  contentRu.style.display = 'block';
+  contentEn.style.display = 'none';
+</script>
   <!-- Форма подписки -->
   <div id="subscription" style="margin-bottom: 30px; padding: 15px; border: 2px solid #6a0dad; border-radius: 10px; max-width: 400px;">
 <!DOCTYPE html>
