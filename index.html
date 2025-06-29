@@ -1,4 +1,4 @@
-⁷<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
@@ -434,60 +434,69 @@
 </head>
 <body>
 
-  <div class="lang-switcher">
-    <button onclick="switchLang('ru')">Русский</button>
-    <button onclick="switchLang('en')">English</button>
-  </div>
+  <!-- Языковой переключатель -->
+<div class="lang-switcher" style="text-align: right; margin: 20px;">
+  <button id="btn-ru" style="margin-right: 10px;" class="active">🇷🇺 Русский</button>
+  <button id="btn-en">🇬🇧 English</button>
+</div>
 
-  <div id="ru">
-    <!-- ...вся твоя контентная инфа... -->
-  </div>
+<!-- Контент на русском -->
+<div id="content-ru">
+  <!-- Твой русский контент -->
+</div>
 
-  <div id="en" class="hidden">
-    <!-- ...вся твоя контентная инфа на английском... -->
-  </div>
+<!-- Контент на английском -->
+<div id="content-en" style="display:none;">
+  <!-- Твой английский контент -->
+</div>
 
-  <!-- --- ВСТАВЛЯЕМ ФОРМУ КОНТАКТА В КОНЕЦ BODY --- -->
-  <div class="contact-container">
-    <h2>Связаться с Ириной Ароновой</h2>
-    <form action="https://formspree.io/f/mwpbwgpq" method="POST">
-      <label for="name">Имя и Фамилия *</label>
-      <input type="text" id="name" name="name" required placeholder="Введите имя и фамилию">
+<script>
+  const btnRu = document.getElementById('btn-ru');
+  const btnEn = document.getElementById('btn-en');
+  const contentRu = document.getElementById('content-ru');
+  const contentEn = document.getElementById('content-en');
 
-      <label for="country">Страна проживания *</label>
-      <input type="text" id="country" name="country" required placeholder="Ваша страна">
+  // Функция для переключения языка
+  function switchLang(lang) {
+    if (lang === 'ru') {
+      contentRu.style.display = 'block';
+      contentEn.style.display = 'none';
+      btnRu.classList.add('active');
+      btnEn.classList.remove('active');
+      localStorage.setItem('lang', 'ru');
+    } else {
+      contentRu.style.display = 'none';
+      contentEn.style.display = 'block';
+      btnRu.classList.remove('active');
+      btnEn.classList.add('active');
+      localStorage.setItem('lang', 'en');
+    }
+  }
 
-      <label for="phone">Телефон (с кодом страны) *</label>
-      <input type="tel" id="phone" name="phone" required placeholder="+7 123 456 7890">
+  // События на кнопках
+  btnRu.addEventListener('click', () => switchLang('ru'));
+  btnEn.addEventListener('click', () => switchLang('en'));
 
-      <label for="trailer">Трейлер / Видео-ссылка</label>
-      <input type="text" id="trailer" name="trailer" placeholder="Ссылка или кратко о себе">
+  // Инициализация — выбираем язык из localStorage или по умолчанию русский
+  const savedLang = localStorage.getItem('lang') || 'ru';
+  switchLang(savedLang);
+</script>
 
-      <label for="message">Сообщение / Заметки *</label>
-      <textarea id="message" name="message" required placeholder="Ваше сообщение"></textarea>
-
-      <input type="hidden" name="_captcha" value="false" />
-
-      <button type="submit">Отправить</button>
-    </form>
-
-    <div class="social-links" aria-label="Социальные сети Ирины Ароновой">
-      <a href="https://t.me/+0OkRnsZ4F6A4NTlk" target="_blank" title="Main Telegram Channel">📢</a>
-      <a href="https://t.me/+jBo7z3dpv8Q2NDlk" target="_blank" title="Private Channel Comet">🌠</a>
-      <a href="https://t.me/+aEQA9xTOizM4Zjhk" target="_blank" title="Private Trainings & Education">🎓</a>
-      <a href="https://t.me/+rD3sh8DKvtBhZGM0" target="_blank" title="Private ART & Creativity">🎨</a>
-      <a href="https://t.me/+1l8v3z-RqKkzMTY0" target="_blank" title="Private Web3 Finance — 3 Club Cards">💳</a>
-      <a href="https://t.me/irina_aronova_property_sales" target="_blank" title="Luxury Real Estate Sales (Thailand)">🏠</a>
-      <a href="https://im.page/9b3d974f" target="_blank" title="Subscription Page">📄</a>
-      <a href="http://t.me/AtonovaBot" target="_blank" title="Telegram Bot AtonovaBot">🤖</a>
-      <a href="http://t.me/Dezidietrabot" target="_blank" title="Telegram Bot Dezidietrabot">🤖</a>
-      <a href="https://www.youtube.com/@IRYNA_ARONOVA_VERTICAL" target="_blank" title="YouTube Channel">▶️</a>
-      <a href="https://zora.co/success_lady_aronova3696" target="_blank" title="NFT Profile on ZORA">🖼️</a>
-      <a href="https://pin.it/3WdrvORm9" target="_blank" title="Pinterest">📌</a>
-      <a href="https://medium.com/@my.step.2025.power" target="_blank" title="Medium Blog">✍️</a>
-      <a href="https://twitter.com/i_a_vertical_m" target="_blank" title="Twitter">@</a>
-    </div>
-  </div>
+<style>
+  .lang-switcher button {
+    padding: 8px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #333;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+  .lang-switcher button.active {
+    background-color: #6a0dad;
+    color: white;
+    border-color: #6a0dad;
+  }
+</style>
 
 <script>
   function switchLang(lang) {
