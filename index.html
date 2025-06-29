@@ -671,10 +671,10 @@
     e.preventDefault();
     const message = chatInput.value.trim();
     if (!message) return;
-    
+
     appendMessage('Вы', message);
     chatInput.value = '';
-    
+
     // Заглушка — ответ поддержки через 1 секунду
     setTimeout(() => {
       appendMessage('Поддержка', 'Спасибо за сообщение! Скоро свяжемся с вами.');
@@ -692,7 +692,3 @@
 </script>
 </body>
 </html>
-</script>
-</body>
-</html>
-
