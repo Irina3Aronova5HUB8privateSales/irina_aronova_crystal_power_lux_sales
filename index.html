@@ -251,22 +251,110 @@ head>
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-bottom: 30px;
+</body>  
+</html>  
+</head>  
+<body>    <!-- Языковой переключатель -->  <!-- Языковой переключатель -->  <div class="lang-switcher" style="text-align: right; margin: 20px;">  
+  <button id="btn-ru" style="margin-right: 10px;" class="active">🇷🇺 Русский</button>  
+  <button id="btn-en">🇬🇧 English</button>  
+</div>  <!-- Контент на русском -->  <div id="content-ru">  
+  <!-- Твой русский контент -->  
+</div>  <!-- Контент на английском -->  <div id="content-en" style="display:none;">  
+  <!-- Твой английский контент -->  
+</div>  <script>  
+  const btnRu = document.getElementById('btn-ru');  
+  const btnEn = document.getElementById('btn-en');  
+  const contentRu = document.getElementById('content-ru');  
+  const contentEn = document.getElementById('content-en');  
+  
+  // Функция для переключения языка  
+  function switchLang(lang) {  
+    if (lang === 'ru') {  
+      contentRu.style.display = 'block';  
+      contentEn.style.display = 'none';  
+      btnRu.classList.add('active');  
+      btnEn.classList.remove('active');  
+      localStorage.setItem('lang', 'ru');  
+    } else {  
+      contentRu.style.display = 'none';  
+      contentEn.style.display = 'block';  
+      btnRu.classList.remove('active');  
+      btnEn.classList.add('active');  
+      localStorage.setItem('lang', 'en');  
+    }  
+  }  
+  
+  // События на кнопках  
+  btnRu.addEventListener('click', () => switchLang('ru'));  
+  btnEn.addEventListener('click', () => switchLang('en'));  
+  
+  // Инициализация — выбираем язык из localStorage или по умолчанию русский  
+  const savedLang = localStorage.getItem('lang') || 'ru';  
+  switchLang(savedLang);  
+</script>  <style>  
+  .lang-switcher button {  
+    padding: 8px 15px;  
+    font-weight: bold;  
+    cursor: pointer;  
+    border: 1px solid #333;  
+    background-color: #f0f0f0;  
+    border-radius: 5px;  
+  }  
+  .lang-switcher button.active {  
+    background-color: #6a0dad;  
+    color: white;  
+    border-color: #6a0dad;  
+  }  
+</style>    <!-- Форма подписки -->    <div id="subscription" style="margin-bottom: 30px; padding: 15px; border: 2px solid #6a0dad; border-radius: 10px; max-width: 400px;">  
+<!DOCTYPE html>  
+<html lang="ru">  
+<head>  
+  <meta charset="UTF-8" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />  
+  <title>Crystal Power Lux Sales</title>  
+  <style>  
+    body {  
+      font-family: Arial, sans-serif;  
+      background-color: #fff;  
+      color: #000;  
+      line-height: 1.6;  
+      padding: 20px;  
+    }  
+    .lang-switcher {  
+      text-align: right;  
+      margin-bottom: 20px;  
+    }  
+    .lang-switcher button {  
+      margin-left: 10px;  
+      padding: 8px 15px;  
+      font-weight: bold;  
+      cursor: pointer;  
+      border: 1px solid #333;  
+      background-color: #f0f0f0;  
+      border-radius: 5px;  
+    }  
+    .hidden {  
+      display: none;  
+    }  
+    h1 {  
+      font-size: 28px;  
+    }  
+    table {  
+      width: 100%;  
+      border-collapse: collapse;  
+      margin-bottom: 30px;  
+    }  
+    th, td {  
+      border: 1px solid #ccc;  
+      padding: 10px;  
+      text-align: left;  
+    }  
+    p {  
+      font-size: 16px;  
+    }  
+    strong {  
+      color: #b22222;  
     }
-    th, td {
-      border: 1px solid #ccc;
-      padding: 10px;
-      text-align: left;
-    }
-    p {
-      font-size: 16px;
-    }
-    strong {
-      color: #b22222;
-    }
-  </style>
-</head>
-<body>
 
   <div class="lang-switcher">
     <button onclick="switchLang('ru')">Русский</button>
