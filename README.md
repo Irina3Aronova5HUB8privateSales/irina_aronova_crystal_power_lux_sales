@@ -159,35 +159,6 @@
       <p>Оплачивая напрямую через криптовалюту, вы автоматически получаете эксклюзивный NFT дроп с персональным доступом и правом личного владения.</p>
       <p><strong>Внимание!</strong> Это прямые продажи от владельца коллекции — без посредников и “медийного шума”.</p>
     </div>
-    <div class="flex-img">
-      <img src="https://cdn.openai.com/chatgpt/fire_woman_65000euro.png" alt="Огненная женщина с цифрой 65000€" />
-      <div class="price">65000€</div>
-    </div>
-  </article>
-
-  <div class="project-visual">
-    <img src="https://i.postimg.cc/GmGxP7N9/Screenshot-20250528-110020-Chat-GPT.jpg" alt="Визуализация проекта КОМЕТА" />
-  </div>
-
-  <!-- Блок инвестирования -->
-  <section id="investment">
-    <h2>ИНВЕСТИРОВАНИЕ</h2>
-    <form>
-      <label for="investAmount">Сумма инвестирования</label>
-      <input type="text" id="investAmount" name="investAmount" placeholder="Введите сумму" />
-      
-      <label for="investName">Ваше имя</label>
-      <input type="text" id="investName" name="investName" placeholder="Введите имя" />
-      
-      <label for="investEmail">Электронная почта</label>
-      <input type="text" id="investEmail" name="investEmail" placeholder="Введите email" />
-      
-      <button type="submit">Отправить заявку</button>
-    </form>
-  </section>
-
-  <!-- Блок партнёрских коллабораций -->
-  <section id="partner-collaborations">
 !DOCTYPE html>
 <html lang="ru">
 <head>
@@ -440,7 +411,100 @@
       </p>
       <p>Ethereum / ZORA Wallet Address:<br />
         <code>0xe5fdd6e483ac8497d948b433c1
-        <!-- Скрипт переключения языков -->
+<!-- Скрипт переключения языков -->
+<script>
+  const btnRu = document.getElementById('btn-ru');
+  const btnEn = document.getElementById('btn-en');
+  const contentRu = document.getElementById('content-ru');
+  const contentEn = document.getElementById('content-en');
+
+  btnRu.addEventListener('click', () => {
+    contentRu.style.display = 'block';
+    contentEn.style.display = 'none';
+  });
+
+  btnEn.addEventListener('click', () => {
+    contentRu.style.display = 'none';
+    contentEn.style.display = 'block';
+  });
+
+  // Устанавливаем язык по умолчанию — русский
+  contentRu.style.display = 'block';
+  contentEn.style.display = 'none';
+</script>
+
+<!-- Языковой переключатель -->
+<div class="lang-switcher" style="text-align: right; margin: 20px;">
+  <button id="btn-ru" style="margin-right: 10px;" class="active">🇷🇺 Русский</button>
+  <button id="btn-en">🇬🇧 English</button>
+</div>
+
+<!-- Контент на русском -->
+<div id="content-ru">
+  <div style="margin: 20px 0; padding: 20px; border: 2px dashed #6a0dad; border-radius: 10px; background: #fafafa;">
+    <p>📲 На сайте доступны <strong>4 коммерческих направления</strong>:</p>
+    <ol>
+      <li>Авторские Тренинги</li>
+      <li>NFT-Drop: Art-копии из коллекции</li>
+      <li>Продажа вилл класса люкс на Пхукете (1.5M$–8M$)</li>
+      <li>Клубные карты — доступ к пассивному доходу и партнёрской системе</li>
+    </ol>
+    <p><strong>💳 Оплата:</strong> Crypto / Telegram Bots / Subscriptions</p>
+    <ul>
+      <li>✅ Подписка на платные и закрытые каналы</li>
+      <li>✅ Персональная обратная связь</li>
+      <li>✅ Поддержка клиентов 24/7</li>
+    </ul>
+    <p><strong>🔗 Официальный сайт:</strong><br>
+      👉 <a href="https://irina3aronova5hub8privatesales.github.io/irina_aronova_crystal_power_lux_sales" target="_blank" rel="noopener">irina3aronova5hub8privatesales.github.io</a>
+    </p>
+    <p><strong>📩 Контакты:</strong><br>
+      📱 WhatsApp/Telegram: +48 693 158 228<br>
+      📱 WhatsApp: +48 663 665 524<br>
+      📥 Email: irina.aronova.vertical.web3@gmail.com
+    </p>
+    <p><strong>🌐 Подписка / Bots / NFT:</strong><br>
+      🔸 Telegram Bots: @AtonovaBot, @Dezidietrabot<br>
+      🔸 NFT: <a href="https://zora.co/success_lady_aronova3696" target="_blank" rel="noopener">zora.co/success_lady_aronova3696</a><br>
+      🔸 Subscription Page: <a href="https://im.page/9b3d974f" target="_blank" rel="noopener">im.page/9b3d974f</a>
+    </p>
+    <p><em>🪄 This is just the beginning. Welcome to the Crystal Future.</em></p>
+  </div>
+</div>
+
+<!-- Контент на английском -->
+<div id="content-en" style="display:none;">
+  <div style="margin: 20px 0; padding: 20px; border: 2px dashed #6a0dad; border-radius: 10px; background: #fafafa;">
+    <p>📲 The website offers <strong>4 commercial directions</strong>:</p>
+    <ol>
+      <li>Author's Trainings</li>
+      <li>NFT-Drop: Art copies from the collection</li>
+      <li>Luxury villa sales in Phuket (1.5M$–8M$)</li>
+      <li>Club cards — access to passive income and affiliate system</li>
+    </ol>
+    <p><strong>💳 Payment:</strong> Crypto / Telegram Bots / Subscriptions</p>
+    <ul>
+      <li>✅ Subscription to paid and private channels</li>
+      <li>✅ Personal feedback</li>
+      <li>✅ 24/7 Customer support</li>
+    </ul>
+    <p><strong>🔗 Official website:</strong><br>
+      👉 <a href="https://irina3aronova5hub8privatesales.github.io/irina_aronova_crystal_power_lux_sales" target="_blank" rel="noopener">irina3aronova5hub8privatesales.github.io</a>
+    </p>
+    <p><strong>📩 Contacts:</strong><br>
+      📱 WhatsApp/Telegram: +48 693 158 228<br>
+      📱 WhatsApp: +48 663 665 524<br>
+      📥 Email: irina.aronova.vertical.web3@gmail.com
+    </p>
+    <p><strong>🌐 Subscription / Bots / NFT:</strong><br>
+      🔸 Telegram Bots: @AtonovaBot, @Dezidietrabot<br>
+      🔸 NFT: <a href="https://zora.co/success_lady_aronova3696" target="_blank" rel="noopener">zora.co/success_lady_aronova3696</a><br>
+      🔸 Subscription Page: <a href="https://im.page/9b3d974f" target="_blank" rel="noopener">im.page/9b3d974f</a>
+    </p>
+    <p><em>🪄 This is just the beginning. Welcome to the Crystal Future.</em></p>
+  </div>
+</div>
+<!-- Скрипт переключения языков -->
 <script>
   const btnRu = document.getElementById('btn-ru');
   const btnEn = document.getElementById('btn-en');
@@ -813,6 +877,3 @@
     }
   });
 </script>
-
-</body>
-</html>
