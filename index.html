@@ -159,45 +159,238 @@
       <p>Оплачивая напрямую через криптовалюту, вы автоматически получаете эксклюзивный NFT дроп с персональным доступом и правом личного владения.</p>
       <p><strong>Внимание!</strong> Это прямые продажи от владельца коллекции — без посредников и “медийного шума”.</p>
     </div>
+!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Crystal Power Lux Sales</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #000;
+      line-height: 1.6;
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    #language-toggle {
+      text-align: right;
+      margin-bottom: 20px;
+    }
+    .lang-btn {
+      margin-left: 10px;
+      padding: 8px 15px;
+      font-weight: bold;
+      cursor: pointer;
+      border: 1px solid #333;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+      user-select: none;
+    }
+    .lang-btn.active {
+      background-color: #2a9d8f;
+      color: #fff;
+      border-color: #2a9d8f;
+    }
+    h1, h2 {
+      color: #1a1a1a;
+    }
+    /* Инвестиционный блок */
+    #investment {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      border: 2px solid #444;
+      margin-bottom: 30px;
+    }
+    #investment label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 6px;
+      margin-top: 10px;
+    }
+    #investment input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    #investment button {
+      margin-top: 15px;
+      background: #2a9d8f;
+      color: #fff;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    /* Остальной контент */
+    article {
+      border: 1px solid #b22222;
+      padding: 20px;
+      margin-top: 30px;
+      border-radius: 8px;
+      background-color: #fff8e1;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    article div.flex-text {
+      flex: 1;
+    }
+    article div.flex-img {
+      flex: 0 0 300px;
+      text-align: center;
+    }
+    article img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    article .price {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    .hidden {
+      display: none;
+    }
+    /* Кнопка чата */
+    #chatButton {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #6a0dad;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-size: 30px;
+      cursor: pointer;
+      z-index: 1000;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: background-color 0.3s ease;
+      user-select: none;
+    }
+    #chatButton:hover {
+      background-color: #4b086a;
+    }
+  </style>
+</head>
+<body>
+  <!-- Языковой переключатель -->
+  <div id="language-toggle">
+    <button id="btn-ru" class="lang-btn active" aria-pressed="true" aria-label="Переключить язык на русский">RU</button>
+    <button id="btn-en" class="lang-btn" aria-pressed="false" aria-label="Переключить язык на английский">EN</button>
+  </div>
+
+  <!-- Контент на русском -->
+  <article id="content-ru" lang="ru" tabindex="-1">
+    <div class="flex-text">
+      <h2>#NFT #DigitalArt #Zora #Ethereum #Web3 #CryptoArt #NFTDrop</h2>
+      <p>Дорогие друзья и поклонники моего искусства!</p>
+      <p>Я, Ирина Аронова, владелица уникального портфолио из 250 работ Galactic Graphics в формате “LUX Millennium Life”, рада представить мой новый проект — покупку NFT цифровых копий моих работ на платформе Zora.</p>
+      <p>Теперь у вас есть возможность владеть эксклюзивным цифровым изображением из моей коллекции, отчеканенным в виде NFT! Все работы доступны по ссылке:</p>
+      <p>👉 NFT профиль на Zora:<br />
+        <a href="https://zora.co/success_lady_aronova3696" target="_blank" rel="noopener noreferrer">https://zora.co/success_lady_aronova3696</a>
+      </p>
+      <p>Ethereum / ZORA Wallet Address:<br />
+        <code>0xe5fdd6e483ac8497d948b433c1b05f6bb94716e0</code>
+      </p>
+      <p>Поддерживаемые сети:<br />
+        Ethereum Mainnet (ETH), USDT/USDC (ERC20), NFT через протокол Zora</p>
+      <p>💰 Подписка и доступ:<br />
+        Цена — 499$ в месяц<br />
+        Страница подписки:<br />
+        <a href="https://im.page/9b3d974f" target="_blank" rel="noopener noreferrer">https://im.page/9b3d974f</a></p>
+      <p>Оплата через Web3 blockchain ewallet:<br />
+        USDT TRC20: TUpykxPGaWffScBmyfSxRYXQSzUpmMf9HJ<br />
+        USDT ERC20: 0x5Ca8267e12336E10E1f0d9087A583B71Ef443fc5<br />
+        MetaMask (USDT ERC20): 0xF2F82A77fd748835CA05B42c2d004b4614c61C15</p>
+      <p>Оплачивая напрямую через криптовалюту, вы автоматически получаете эксклюзивный NFT дроп с персональным доступом и правом личного владения.</p>
+      <p><strong>Внимание!</strong> Это прямые продажи от владельца коллекции — без посредников и “медийного шума”.</p>
+    </div>
     <div class="flex-img">
       <img src="https://cdn.openai.com/chatgpt/fire_woman_65000euro.png" alt="Огненная женщина с цифрой 65000€" />
       <div class="price">65000€</div>
     </div>
   </article>
 
-  <div class="project-visual">
-    <img src="https://i.postimg.cc/GmGxP7N9/Screenshot-20250528-110020-Chat-GPT.jpg" alt="Визуализация проекта КОМЕТА" />
-  </div>
+  <!-- Контент на английском -->
+  <article id="content-en" lang="en" class="hidden" tabindex="-1">
+    <div class="flex-text">
+      <h2>#NFT #DigitalArt #Zora #Ethereum #Web3 #CryptoArt #NFTDrop</h2>
+      <p>Dear friends and fans of my art!</p>
+      <p>I, Irina Aronova, owner of a unique portfolio of 250 works of Galactic Graphics in the “LUX Millennium Life” format, am pleased to present my new project — purchasing NFT digital copies of my works on the Zora platform.</p>
+      <p>Now you have the opportunity to own an exclusive digital image from my collection minted as an NFT! All works are available at the link:</p>
+      <p>👉 NFT profile on Zora:<br />
+        <a href="https://zora.co/success_lady_aronova3696" target="_blank" rel="noopener noreferrer">https://zora.co/success_lady_aronova3696</a>
+      </p>
+      <p>Ethereum / ZORA Wallet Address:<br />
+        <code>0xe5fdd6e483ac8497d948b433c1b05f6bb94716e0</code>
+      </p>
+      <p>Supported networks:<br />
+        Ethereum Mainnet (ETH), USDT/USDC (ERC20), NFT via Zora protocol</p>
+      <p>💰 Subscription and access:<br />
+        Price — $499 per month<br />
+        Subscription page:<br />
+        <a href="https://im.page/9b3d974f" target="_blank" rel="noopener noreferrer">https://im.page/9b3d974f</a></p>
+      <p>Payment via Web3 blockchain ewallet:<br />
+        USDT TRC20: TUpykxPGaWffScBmyfSxRYXQSzUpmMf9HJ<br />
+        USDT ERC20: 0x5Ca8267e12336E10E1f0d9087A583B71Ef443fc5<br />
+        MetaMask (USDT ERC20): 0xF2F82A77fd748835CA05B42c2d004b4614c61C15</p>
+      <p>By paying directly via cryptocurrency, you automatically receive an exclusive NFT drop with personal access and ownership rights.</p>
+      <p><strong>Attention!</strong> These are direct sales from the collection owner — no intermediaries or “media noise”.</p>
+    </div>
+    <div class="flex-img">
+      <img src="https://cdn.openai.com/chatgpt/fire_woman_65000euro.png" alt="Fire woman with price 65000€" />
+      <div class="price">65000€</div>
+    </div>
+  </article>
 
-  <!-- Блок инвестирования -->
-  <section id="investment">
-    <h2>ИНВЕСТИРОВАНИЕ</h2>
-    <form>
-      <label for="investAmount">Сумма инвестирования</label>
-      <input type="text" id="investAmount" name="investAmount" placeholder="Введите сумму" />
-      
-      <label for="investName">Ваше имя</label>
-      <input type="text" id="investName" name="investName" placeholder="Введите имя" />
-      
-      <label for="investEmail">Электронная почта</label>
-      <input type="text" id="investEmail" name="investEmail" placeholder="Введите email" />
-      
-      <button type="submit">Отправить заявку</button>
-    </form>
-  </section>
+  <!-- Кнопка чата -->
+  <button id="chatButton" aria-label="Открыть чат">💬</button>
 
-  <!-- Блок партнёрских коллабораций -->
-  <section id="partner-collaborations">
-    <h2>ПАРТНЕРСКИЕ КОЛЛАБОРАЦИИ</h2>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const btnRu = document.getElementById('btn-ru');
+      const btnEn = document.getElementById('btn-en');
+      const contentRu = document.getElementById('content-ru');
+      const contentEn = document.getElementById('content-en');
+      const chatButton = document.getElementById('chatButton');
 
-    <!-- YouTube канал по онлайн-курсам -->
-    <p><strong>ОНЛАЙН-КУРСЫ И ОБУЧЕНИЕ:</strong></p>
-    <p>
-      <a href="https://www.youtube.com/@IRYNA_ARONOVA_VERTICAL" target="_blank" rel="noopener" style="color: #FF0000; font-weight: bold;">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Youtube%28amin%29.png" alt="YouTube" />
-        Перейти на канал IRYNA ARONOVA VERTICAL
-      </a>
-    </p>
+      function switchLanguage(lang) {
+        if (lang === 'ru') {
+          btnRu.classList.add('active');
+          btnRu.setAttribute('aria-pressed', 'true');
+          btnEn.classList.remove('active');
+          btnEn.setAttribute('aria-pressed', 'false');
+          contentRu.classList.remove('hidden');
+          contentEn.classList.add('hidden');
+          contentRu.focus();
+        } else if (lang === 'en') {
+          btnEn.classList.add('active');
+          btnEn.setAttribute('aria-pressed', 'true');
+          btnRu.classList.remove('active');
+          btnRu.setAttribute('aria-pressed', 'false');
+          contentEn.classList.remove('hidden');
+          contentRu.classList.add('hidden');
+          contentEn.focus();
+        }
+      }
+
+      btnRu.addEventListener('click', () => switchLanguage('ru'));
+      btnEn.addEventListener('click', () => switchLanguage('en'));
+
+      chatButton.addEventListener('click', () => {
+        alert('Чат пока не реализован, но это место для его открытия!');
+      });
+    });
+  </script>
+</body>
+</html>
 
     <!-- Остальные ссылки -->
     <p><a href="https://bodycare.com" target="_blank" rel="noopener">Body Care</a></p>
