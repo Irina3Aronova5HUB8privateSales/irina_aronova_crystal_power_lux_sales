@@ -1104,6 +1104,24 @@
     chatMessages.appendChild(msg);
     chatMessages.scrollTop = chatMessages.scrollHeight;
   }
+  <section id="social-media" style="max-width: 600px; margin: 40px auto; font-family: 'Helvetica Neue', Arial, sans-serif; text-align: center;">
+  <h2 style="font-weight: 700; font-size: 1.8rem; margin-bottom: 25px; color: #222;">Свяжитесь со мной в соцсетях</h2>
+  <div style="display: flex; justify-content: center; gap: 30px;">
+    <a href="https://www.facebook.com/profile.php?id=61577032404963" target="_blank" rel="noopener" aria-label="Facebook" style="color: #3b5998; font-size: 28px; transition: color 0.3s;">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="32" height="32"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 5 3.66 9.13 8.44 9.88v-6.99H7.9v-2.9h2.54V9.79c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.9h-2.34v6.99C18.34 21.13 22 17 22 12z"/></svg>
+    </a>
+    <a href="https://www.youtube.com/@IRYNA_ARONOVA_VERTICAL" target="_blank" rel="noopener" aria-label="YouTube" style="color: #FF0000; font-size: 28px; transition: color 0.3s;">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="32" height="32"><path d="M10 15l5.19-3L10 9v6zM21.8 7.2s-.2-1.42-.8-2.05c-.76-.81-1.62-.82-2.01-.87C15.23 4 12 4 12 4s-3.22 0-6.98.28c-.39.05-1.25.06-2.01.87-.6.63-.8 2.05-.8 2.05S2 9.01 2 10.82v2.36c0 1.81.21 3.62.21 3.62s.2 1.42.8 2.05c.76.81 1.76.78 2.21.87 1.6.18 6.78.26 6.78.26s3.23-.01 6.99-.28c.39-.05 1.25-.06 2.01-.87.6-.63.8-2.05.8-2.05s.21-1.81.21-3.62v-2.36c0-1.81-.21-3.62-.21-3.62z"/></svg>
+    </a>
+    <a href="https://www.linkedin.com/in/irina-aronova-87522236b" target="_blank" rel="noopener" aria-label="LinkedIn" style="color: #0A66C2; font-size: 28px; transition: color 0.3s;">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="32" height="32"><path d="M20.45 20.45h-3.555v-5.569c0-1.33-.025-3.043-1.854-3.043-1.853 0-2.135 1.447-2.135 2.94v5.672h-3.554v-11.49h3.414v1.571h.05c.476-.9 1.637-1.854 3.367-1.854 3.6 0 4.268 2.368 4.268 5.451v6.322zM5.337 7.433c-1.145 0-2.07-.928-2.07-2.072 0-1.147.925-2.074 2.07-2.074 1.144 0 2.07.927 2.07 2.074 0 1.144-.926 2.072-2.07 2.072zm1.778 13.017h-3.555v-11.49h3.555v11.49zM22.225 0H1.771C.792 0 0 .774 0 1.728v20.543C0 23.224.792 24 1.771 24h20.451C23.203 24 24 23.224 24 22.271V1.728C24 .774 23.203 0 22.225 0z"/></svg>
+    </a>
+    <a href="https://pin.it/3WdrvORm9" target="_blank" rel="noopener" aria-label="Pinterest" style="color: #E60023; font-size: 28px; transition: color 0.3s;">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="32" height="32"><path d="M12 0c-6.627 0-12 5.373-12 12 0 4.78 2.74 8.887 6.666 10.647-.093-.9-.176-2.281.037-3.264.192-.887 1.24-5.668 1.24-5.668s-.314-.629-.314-1.56c0-1.46.847-2.55 1.901-2.55.896 0 1.329.672 1.329 1.478 0 .9-.573 2.244-.87 3.494-.247 1.05.525 1.9 1.56 1.9 1.872 0 3.321-1.975 3.321-4.82 0-2.51-1.806-4.27-4.385-4.27-2.986 0-4.734 2.237-4.734 4.55 0 .9.347 1.87.78 2.395.086.104.1.195.074.3-.08.33-.259 1.05-.293 1.2-.05.18-.17.22-.4.13-1.494-.695-2.424-2.878-2.424-4.645 0-3.78 2.75-7.253 7.93-7.253 4.154 0 7.38 2.97 7.38 6.94 0 4.153-2.615 7.503-6.25 7.503-1.22 0-2.365-.63-2.757-1.37l-.75 2.86c-.273 1.03-1.01 2.32-1.5 3.11C9.33 23.77 10.64 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+    </a>
+    <a href="https://medium.com/@my.step.2025.power" target="_blank" rel="noopener" aria-label="Medium" style="color: #000000; font-size: 28px; transition: color 0.3s;">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="32" height="32"><path d="M2.01 6.68v10.64c0 1.13.92 2.04 2.04 2.04h15.9c1.13 0 2.04-.91 2.04-2.04V6.68c0-1.13-.91-2.04-2.04-2.04H4.05c-1.12 0-2.04.91-2.04 2.04z
+
 </script>
 </body>
 </html>
