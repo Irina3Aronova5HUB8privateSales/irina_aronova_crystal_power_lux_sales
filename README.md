@@ -900,3 +900,71 @@
   btnRu.addEventListener('click', () => toggleLanguage('ru'));  
   btnEn.addEventListener('click', () => toggleLanguage('en'));  
 </script>  
+
+<button id="chatButton" aria-label="Открыть чат" style="
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1000;
+">💬</button>
+
+🔹 Окно чата (прямо после кнопки):
+
+<div id="chatWindow" role="region" aria-live="polite" aria-label="Чат поддержки" style="
+  display: none;
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 300px;
+  max-height: 400px;
+  background: white;
+  border: 2px solid #6a0dad;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1001;
+  flex-direction: column;
+  overflow: hidden;
+">
+  <div id="chatHeader" style="
+    background-color: #6a0dad;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  ">Поддержка</div>
+
+  <div id="chatMessages" style="
+    padding: 10px;
+    height: 250px;
+    overflow-y: auto;
+    background: #f9f9f9;
+    font-size: 14px;
+  "></div>
+
+  <form id="chatForm" style="display: flex; border-top: 1px solid #ddd;">
+    <input type="text" id="chatInput" placeholder="Напиши сообщение..." aria-label="Сообщение" autocomplete="off" required style="
+      flex: 1;
+      border: none;
+      padding: 10px;
+      font-size: 14px;
+      outline: none;
+    "/>
+    <button type="submit" id="chatSend" style="
+      background-color: #6a0dad;
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-weight: bold;
+    ">Отправить</button>
+  </form>
+</div>
