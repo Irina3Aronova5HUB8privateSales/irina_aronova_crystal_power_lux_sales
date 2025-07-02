@@ -982,3 +982,91 @@
   cursor: pointer;
   z-index: 1000;
 ">💬</button>
+<div id="chatWindow" role="region" aria-live="polite" aria-label="Чат поддержки" style="
+  display: none;
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 300px;
+  max-height: 400px;
+  background: white;
+  border: 2px solid #6a0dad;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1001;
+  flex-direction: column;
+  overflow: hidden;
+">
+  <div id="chatHeader" style="
+    background-color: #6a0dad;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  ">Поддержка</div>
+
+  <div id="chatMessages" style="
+    padding: 10px;
+    height: 250px;
+    overflow-y: auto;
+    background: #f9f9f9;
+    font-size: 14px;
+  "></div>
+
+  <form id="chatForm" style="display: flex; border-top: 1px solid #ddd;">
+    <input type="text" id="chatInput" placeholder="Напиши сообщение..." aria-label="Сообщение" autocomplete="off" required style="
+      flex: 1;
+      border: none;
+      padding: 10px;
+      font-size: 14px;
+      outline: none;
+    "/>
+    <button type="submit" id="chatSend" style="
+      background-color: #6a0dad;
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-weight: bold;
+    ">Отправить</button>
+  </form>
+</div>
+
+🔹 JS (внизу страницы):
+
+<script>
+  const chatButton = document.getElementById('chatButton');
+  const chatWindow = document.getElementById('chatWindow');
+  const chatMessages = document.getElementById('chatMessages');
+  const chatForm = document.getElementById('chatForm');
+  const chatInput = document.getElementById('chatInput');
+
+  chatButton.addEventListener('click', () => {
+    const isVisible = chatWindow.style.display === 'flex';
+    chatWindow.style.display = isVisible ? 'none' : 'flex';
+    if (!isVisible) chatInput.focus();
+  });
+
+  chatForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const message = chatInput.value.trim();
+    if (!message) return;
+
+    appendMessage('Вы', message);
+    chatInput.value = '';
+
+    setTimeout(() => {
+      appendMessage('Поддержка', 'Спасибо за сообщение! Мы свяжемся с вами в ближайшее время.');
+    }, 1000);
+  });
+
+  function appendMessage(sender, text) {
+    const msg = document.createElement('div');
+    msg.textContent = `${sender}: ${text}`;
+    msg.style.marginBottom = '8px';
+    msg.style.fontWeight = sender === 'Поддержка' ? 'bold' : 'normal';
+    chatMessages.appendChild(msg);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+  }
+</script>
