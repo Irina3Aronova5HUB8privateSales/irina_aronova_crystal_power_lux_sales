@@ -877,3 +877,26 @@
     }
   });
 </script>
+<script>  
+  const btnRu = document.getElementById('btn-ru');  
+  const btnEn = document.getElementById('btn-en');  
+  const contentRu = document.getElementById('content-ru');  
+  const contentEn = document.getElementById('content-en');  
+  
+  function toggleLanguage(lang) {  
+    if (lang === 'ru') {  
+      contentRu.style.display = 'block';  
+      contentEn.style.display = 'none';  
+      btnRu.classList.add('active');  
+      btnEn.classList.remove('active');  
+    } else {  
+      contentRu.style.display = 'none';  
+      contentEn.style.display = 'block';  
+      btnEn.classList.add('active');  
+      btnRu.classList.remove('active');  
+    }  
+  }  
+  
+  btnRu.addEventListener('click', () => toggleLanguage('ru'));  
+  btnEn.addEventListener('click', () => toggleLanguage('en'));  
+</script>  
