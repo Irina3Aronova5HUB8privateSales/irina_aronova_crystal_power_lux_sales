@@ -1105,3 +1105,5 @@
     chatMessages.scrollTop = chatMessages.scrollHeight;
   }
 </script>
+</body>
+</html>
