@@ -1070,3 +1070,38 @@
     chatMessages.scrollTop = chatMessages.scrollHeight;
   }
 </script>
+<script>
+  const chatButton = document.getElementById('chatButton');
+  const chatWindow = document.getElementById('chatWindow');
+  const chatMessages = document.getElementById('chatMessages');
+  const chatForm = document.getElementById('chatForm');
+  const chatInput = document.getElementById('chatInput');
+
+  chatButton.addEventListener('click', () => {
+    const isVisible = chatWindow.style.display === 'flex';
+    chatWindow.style.display = isVisible ? 'none' : 'flex';
+    if (!isVisible) chatInput.focus();
+  });
+
+  chatForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const message = chatInput.value.trim();
+    if (!message) return;
+
+    appendMessage('Вы', message);
+    chatInput.value = '';
+
+    setTimeout(() => {
+      appendMessage('Поддержка', 'Спасибо за сообщение! Мы свяжемся с вами в ближайшее время.');
+    }, 1000);
+  });
+
+  function appendMessage(sender, text) {
+    const msg = document.createElement('div');
+    msg.textContent = `${sender}: ${text}`;
+    msg.style.marginBottom = '8px';
+    msg.style.fontWeight = sender === 'Поддержка' ? 'bold' : 'normal';
+    chatMessages.appendChild(msg);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+  }
+</script>
