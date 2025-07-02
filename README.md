@@ -968,3 +968,17 @@
     ">Отправить</button>
   </form>
 </div>
+<button id="chatButton" aria-label="Открыть чат" style="
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1000;
+">💬</button>
