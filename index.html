@@ -1051,6 +1051,18 @@
     chatMessages.appendChild(msg);
     chatMessages.scrollTop = chatMessages.scrollHeight;
   }
+    !-- feedback_form.html -->
+<form action="send_feedback.php" method="POST" enctype="multipart/form-data" style="max-width:500px; margin:auto; padding:20px; border:1px solid #ccc; border-radius:8px; font-family: Arial, sans-serif;">
+  <h2>Отзывы о проекте Андромеда</h2>
+
+  <label for="feedback_text">Ваш отзыв:</label><br>
+  <textarea id="feedback_text" name="feedback_text" rows="5" required placeholder="Напишите ваш отзыв здесь..." style="width:100%; padding:8px; margin-bottom:10px;"></textarea><br>
+
+  <label for="feedback_file">Прикрепить файл (необязательно):</label><br>
+  <input type="file" id="feedback_file" name="feedback_file" accept=".jpg,.jpeg,.png,.pdf,.doc,.docx" style="margin-bottom:15px;"><br>
+
+  <button type="submit" style="background:#4CAF50; color:white; padding:10px 15px; border:none; border-radius:4px; cursor:pointer;">Отправить отзыв</button>
+</form>
     <section id="cosmic-program" style="padding: 20px; border: 1px solid #ddd; max-width: 700px; font-family: Arial, sans-serif; margin-bottom: 30px;">
   <h2 style="margin-bottom: 15px;">КОСМИЧЕСКАЯ ПРОГРАММА</h2>
   <form action="/submit-cosmic-proposal" method="post" style="display: flex; flex-direction: column; gap: 15px;">
